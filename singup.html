@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<script type="text/javascript" src="validation.js"></script>
+<style style="background-color:powderblue;"></style>
+</head>
+<body><font color="blue" bgcolor = "red"size="5">
+<p>Create your account here.</p>
+</font>
+<form action="signup.html" method="post" name="signup"onsubmit="return validationsignup();" >
+<p>Please enter Your details.</p>
+<p>First Name : </p>
+<input type="textbox" name="fname" />
+<p>Last Name : </p>
+<input type="textbox" name="lname" />
+<p>Gender : </p>
+<input type="radio" name="rd_gen" value="Male" checked>Male &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="rd_gen" value="Female">Female
+<p>E-mail : </p>
+<input type="textbox" name="txtsin_email"/>
+<p>Reg No : </p>
+<input type="textbox" name="s_Id" maxlength="12" />
+<p>Select Department : </p>
+<select name="s_Dept" >
+<option value="sel_SQ">--Select--</option>
+<option value="CSE" >CSE</option>
+<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+<option value="MECH">MECH</option>
+<option value="SH">SH</option>
+</select>
+<p>Student Batch : </p>
+<select name="s_Batch" >
+<option value="">--Select--</option>
+<option value="2010-14" >2010-14</option>
+<option value="2011-15">2011-15</option>
+<option value="2012-16">2012-16</option>
+<option value="2013-17">2013-17</option>
+<option value="2014-18">2014-18</option>
+<option value="2015-19">2015-19</option>
+</select>
+<p>Password : </p>
+<input type="password" name="s_password" />
+<p>Re-Enter Password : </p>
+<input type="password" name="s_rpassword" />
+<p>Mobile No : </p>
+<input type="text" name="s_Mno" maxlength="10" />
+<p>Date of Birth : </p>
+<input type="date" name="s_Dob" id="datepicker-example1"/>
+<p>Address :</p>
+<textarea name="ta_add"wrap="physical" cols="45" rows="5" title="Address Should no excide 100 characters !!"></textarea>
+12
+<br>
+<input type="submit" id="submitMain" name="submitMain" value="submit" />
+&nbsp;&nbsp;&nbsp;
+<input type="reset" id="btnreset" name="btnreset" value="Reset" />
+</form>
+</body>
+</html>
